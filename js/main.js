@@ -302,6 +302,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 12B. Digi Testimonials Tab Switcher (New Design)
+  const digiTabs = document.querySelectorAll('.digi-tab');
+  const digiPanels = document.querySelectorAll('.digi-panel');
+
+  digiTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-panel');
+
+      digiTabs.forEach(t => t.classList.remove('active'));
+      digiPanels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const targetPanel = document.getElementById(target);
+      if (targetPanel) targetPanel.classList.add('active');
+    });
+  });
+
   // 13. Testimonials Scroll Arrows
   document.querySelectorAll('.testi-arrow').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -315,3 +332,108 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+/* ==========================================================================
+   GLOBAL CREATIVITY - SCROLL REVEAL & FLOATING VECTORS
+   ========================================================================== */
+
+// Scroll Reveal Animation
+const revealElements = document.querySelectorAll('.section-header, .stat-box, .why-pro-card, .facility-card, .prog-card, .cert-hcard, .update-card, .placement-stat-card, .qlink-card, .alumni-stat, .fv-goal-item, .calendar-link-btn, .testimonial-card, .testi-student-card, .testi-side-card, .faculty-img-card');
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+revealElements.forEach((el, index) => {
+  el.classList.add('reveal');
+  el.style.transitionDelay = `${(index % 6) * 0.08}s`;
+  revealObserver.observe(el);
+});
+
+// Inject Creative Vector Backgrounds into key sections
+const sectionsForVectors = document.querySelectorAll('.overview-section, .why-choose-section, .programs-section, .quicklinks-section, .calendar-section, .alumni-section');
+
+sectionsForVectors.forEach(section => {
+  const bg = document.createElement('div');
+  bg.className = 'creative-bg';
+  bg.innerHTML = `
+    <div class="vec-circle vec-circle-1"></div>
+    <div class="vec-circle vec-circle-2"></div>
+    <div class="vec-triangle vec-triangle-1"></div>
+    <div class="vec-dot vec-dot-1"></div>
+    <div class="vec-dot vec-dot-2"></div>
+    <div class="vec-dot vec-dot-3"></div>
+    <div class="vec-line vec-line-1"></div>
+    <div class="vec-diamond vec-diamond-1"></div>
+    <div class="vec-cross vec-cross-1"></div>
+  `;
+  section.style.position = 'relative';
+  section.prepend(bg);
+});
+
+// Add different vector patterns to alternate sections
+const sectionsForVectors2 = document.querySelectorAll('.facilities-section, .cert-courses-section, .updates-section, .placement-career-section');
+
+sectionsForVectors2.forEach(section => {
+  const bg = document.createElement('div');
+  bg.className = 'creative-bg';
+  bg.innerHTML = `
+    <div class="vec-circle vec-circle-2"></div>
+    <div class="vec-triangle vec-triangle-2"></div>
+    <div class="vec-dot vec-dot-4"></div>
+    <div class="vec-dot vec-dot-1"></div>
+    <div class="vec-line vec-line-2"></div>
+    <div class="vec-diamond vec-diamond-2"></div>
+    <div class="vec-cross vec-cross-2"></div>
+  `;
+  section.style.position = 'relative';
+  section.prepend(bg);
+});
+
+// Parallax-like subtle movement on mouse
+const heroSection = document.querySelector('.hero-slider-section');
+if (heroSection) {
+  document.addEventListener('mousemove', (e) => {
+    const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+    const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+    
+    document.querySelectorAll('.creative-bg .vec-circle').forEach(el => {
+      el.style.transform = `translate(${moveX * 2}px, ${moveY * 2}px)`;
+    });
+  });
+}
+
+// Counter animation for new placement stats
+const placementNums = document.querySelectorAll('.placement-stat-num, .alumni-stat-num');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const text = el.textContent;
+      const numMatch = text.match(/(\d+)/);
+      if (numMatch) {
+        const target = parseInt(numMatch[1]);
+        const suffix = text.replace(numMatch[1], '');
+        let current = 0;
+        const increment = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            el.textContent = text;
+            clearInterval(timer);
+          } else {
+            el.textContent = current + suffix;
+          }
+        }, 30);
+      }
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+placementNums.forEach(el => counterObserver.observe(el));

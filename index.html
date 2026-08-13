@@ -254,6 +254,11 @@
             environment that is characterized by academic eminence, inspiring and preparing girls to serve as ethical,
             enlightened citizens and leaders in an increasingly intricate, multifarious, and global environment.
           </p>
+          <div class="vm-tags">
+            <span class="vm-tag vm-tag-sky">Empowerment</span>
+            <span class="vm-tag vm-tag-sky">Global Vision</span>
+            <span class="vm-tag vm-tag-sky">Gender Equality</span>
+          </div>
         </div>
 
         <!-- OUR MISSION -->
@@ -272,6 +277,11 @@
             To empower learners with effective career planning skills. To advocate diversity through a personalized
             approach.
           </p>
+          <div class="vm-tags">
+            <span class="vm-tag vm-tag-gold">Quality Education</span>
+            <span class="vm-tag vm-tag-gold">Curiosity</span>
+            <span class="vm-tag vm-tag-gold">Career Growth</span>
+          </div>
         </div>
 
       </div>
@@ -354,7 +364,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-subtitle">Campus Facilities</div>
-        <h2 class="section-title">Infrastructure &amp; <span>Campus Highlights</span></h2>
+        <h2 class="section-title">Infrastructure &amp; <span>Campus Facilities</span></h2>
         <p class="section-description">Modern classrooms, computer labs, fashion studios, e-libraries, and sports
           facilities.</p>
       </div>
@@ -414,7 +424,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-subtitle">Campus Life</div>
-        <h2 class="section-title">Photo <span>Highlights Gallery</span></h2>
+        <h2 class="section-title">Photo &amp; <span>Video Gallery</span></h2>
         <p class="section-description">A visual glimpse into campus events, cultural festivals, and academic activities.
         </p>
       </div>
@@ -689,7 +699,7 @@
     <div class="container">
       <div class="section-header">
         <div class="section-subtitle">Educators</div>
-        <h2 class="section-title">Experienced Faculty &amp; <span>Leadership</span></h2>
+        <h2 class="section-title">Experienced <span>Faculty</span></h2>
         <p class="section-description">Our dedicated academic leaders and coordinators guiding students toward
           excellence.</p>
       </div>
@@ -862,25 +872,25 @@
     </div>
   </section>
 
-  <!-- 13. DIGNITARY & STUDENT TESTIMONIALS (DYNAMIC) -->
-  <section class="section-padding testimonials-section">
+  <!-- 13. TESTIMONIALS - TABBED DARK CARD DESIGN -->
+  <section class="section-padding digi-testi-section" id="testimonials">
     <div class="container">
       <div class="section-header">
         <div class="section-subtitle">Testimonials</div>
-        <h2 class="section-title">What Dignitaries &amp; <span>Students Say</span></h2>
-        <p class="section-description">Inspiring words from academic dignitaries, parents, and successful alumnae.</p>
+        <h2 class="section-title">What People <span>Say About Us</span></h2>
+        <p class="section-description">Inspiring words from academic dignitaries, board members, and our empowered students.</p>
       </div>
 
-      <!-- Tab Switcher -->
-      <div class="testi-tabs">
-        <button class="testi-tab active" data-target="dignitary">
+      <!-- Tab Buttons -->
+      <div class="digi-tab-bar">
+        <button class="digi-tab active" data-panel="dignitaryPanel">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
             <path d="M6 12v5c3 3 9 3 12 0v-5"/>
           </svg>
           Dignitary Testimonials
         </button>
-        <button class="testi-tab" data-target="students">
+        <button class="digi-tab" data-panel="studentsPanel">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
             <circle cx="9" cy="7" r="4"/>
@@ -891,229 +901,418 @@
         </button>
       </div>
 
-      <!-- Dignitary Testimonials -->
-      <div class="testi-panel active" id="dignitary">
-        <div class="testi-scroll-wrap">
-          <button class="testi-arrow testi-arrow-left" data-dir="left" data-track="dignitaryTrack" aria-label="Previous">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="15 18 9 12 15 6"/>
-            </svg>
-          </button>
-
-          <div class="testi-scroll-track" id="dignitaryTrack">
-            <div class="testi-featured-row">
-              <!-- Large Featured Quote -->
-              <div class="testi-featured">
-                <div class="testi-quote-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                  </svg>
-                </div>
-                <p class="testi-featured-quote">"Nandkunvarba Mahila College has set a benchmark for women's higher education in Bhavnagar. Their commitment to free transportation, modern infrastructure, and high academic standard makes them a model institution for women's empowerment."</p>
-                <div class="testi-featured-author">
-                  <div class="testi-author-avatar testi-avatar-red">VC</div>
-                  <div>
-                    <h4 class="testi-author-name">Vice Chancellor</h4>
-                    <span class="testi-author-role">M.K. Bhavnagar University</span>
-                  </div>
-                </div>
+      <!-- Panel 1: Dignitary Dark Cards -->
+      <div class="digi-panel active" id="dignitaryPanel">
+        <div class="digi-cards-row">
+          <!-- Card 1 - Vice Chancellor -->
+          <div class="digi-card">
+            <div class="digi-card-inner">
+              <div class="digi-quote-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
               </div>
-
-              <!-- Side Quotes -->
-              <div class="testi-side-stack">
-                <div class="testi-side-card">
-                  <p class="testi-side-quote">"The college's dedication to women's education through innovative programs and zero-cost facilities is truly commendable."</p>
-                  <div class="testi-side-author">
-                    <div class="testi-author-avatar testi-avatar-gold">DR</div>
-                    <div>
-                      <h4 class="testi-author-name">Dr. Rajesh Patel</h4>
-                      <span class="testi-author-role">Education Board Member</span>
-                    </div>
-                  </div>
+              <h3 class="digi-card-title">A BENCHMARK FOR WOMEN'S HIGHER EDUCATION.</h3>
+              <p class="digi-card-text">"Nandkunvarba Mahila College has set a benchmark for women's higher education in Bhavnagar. Their commitment to free transportation, modern infrastructure, and high academic standard makes them a model institution for women's empowerment."</p>
+              <div class="digi-card-author">
+                <div class="digi-author-img">
+                  <img src="samkit.jpg" alt="Vice Chancellor">
                 </div>
-
-                <div class="testi-side-card">
-                  <p class="testi-side-quote">"An institution that truly lives by its mission of empowering young women with quality education."</p>
-                  <div class="testi-side-author">
-                    <div class="testi-author-avatar testi-avatar-sky">SM</div>
-                    <div>
-                      <h4 class="testi-author-name">Shri Mehta</h4>
-                      <span class="testi-author-role">Trust Chairman</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Second Set -->
-            <div class="testi-featured-row">
-              <div class="testi-featured">
-                <div class="testi-quote-icon">
-                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                  </svg>
-                </div>
-                <p class="testi-featured-quote">"NMC's approach to holistic women's education — combining academics with personality development and career skills — creates well-rounded graduates ready for the modern workforce."</p>
-                <div class="testi-featured-author">
-                  <div class="testi-author-avatar testi-avatar-gold">DM</div>
-                  <div>
-                    <h4 class="testi-author-name">District Magistrate</h4>
-                    <span class="testi-author-role">Bhavnagar District</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-side-stack">
-                <div class="testi-side-card">
-                  <p class="testi-side-quote">"The trust's vision of providing free transport has removed a major barrier to women's education in rural areas."</p>
-                  <div class="testi-side-author">
-                    <div class="testi-author-avatar testi-avatar-sky">AK</div>
-                    <div>
-                      <h4 class="testi-author-name">Prof. Anil Kumar</h4>
-                      <span class="testi-author-role">Academic Advisor</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="testi-side-card">
-                  <p class="testi-side-quote">"A proud example of how private institutions can serve public good through accessible quality education."</p>
-                  <div class="testi-side-author">
-                    <div class="testi-author-avatar testi-avatar-red">JP</div>
-                    <div>
-                      <h4 class="testi-author-name">Dr. Jayanti Patel</h4>
-                      <span class="testi-author-role">UGC Panel Member</span>
-                    </div>
-                  </div>
+                <div class="digi-author-info">
+                  <h4>Vice Chancellor</h4>
+                  <span>M.K. Bhavnagar University</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <button class="testi-arrow testi-arrow-right" data-dir="right" data-track="dignitaryTrack" aria-label="Next">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"/>
-            </svg>
-          </button>
+          <!-- Card 2 - Dr. Rajesh Patel -->
+          <div class="digi-card">
+            <div class="digi-card-inner">
+              <div class="digi-quote-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <h3 class="digi-card-title">INNOVATIVE PROGRAMS &amp; ZERO-COST FACILITIES.</h3>
+              <p class="digi-card-text">"The college's dedication to women's education through innovative programs and zero-cost facilities is truly commendable. An institution that truly lives by its mission of empowering young women."</p>
+              <div class="digi-card-author">
+                <div class="digi-author-img">
+                  <img src="mehul.jpg" alt="Dr. Rajesh Patel">
+                </div>
+                <div class="digi-author-info">
+                  <h4>Dr. Rajesh Patel</h4>
+                  <span>Education Board Member</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 - Shri Mehta -->
+          <div class="digi-card">
+            <div class="digi-card-inner">
+              <div class="digi-quote-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </div>
+              <h3 class="digi-card-title">HOLISTIC EDUCATION &amp; CAREER READINESS.</h3>
+              <p class="digi-card-text">"NMC's approach to holistic women's education — combining academics with personality development and career skills — creates well-rounded graduates ready for the modern workforce."</p>
+              <div class="digi-card-author">
+                <div class="digi-author-img">
+                  <img src="dipak.jpg" alt="Shri Mehta">
+                </div>
+                <div class="digi-author-info">
+                  <h4>Shri Mehta</h4>
+                  <span>Trust Chairman</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Student Testimonials -->
-      <div class="testi-panel" id="students">
-        <div class="testi-scroll-wrap">
-          <button class="testi-arrow testi-arrow-left" data-dir="left" data-track="studentsTrack" aria-label="Previous">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="15 18 9 12 15 6"/>
-            </svg>
-          </button>
-
-          <div class="testi-scroll-track" id="studentsTrack">
-            <div class="testi-students-grid">
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"The free bus pick-up service gave my parents complete peace of mind, and the BCA faculty supported me to launch my IT software career."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-red">PG</div>
-                  <div>
-                    <h4 class="testi-author-name">Priyaba Gohil</h4>
-                    <span class="testi-author-role">BCA Alumna (Batch 2024)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"The free blazer gift made us feel like executive professionals right from day one! Proud to be an NMCian."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-gold">KR</div>
-                  <div>
-                    <h4 class="testi-author-name">Kavita Rathod</h4>
-                    <span class="testi-author-role">BBA Student</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"MSW fieldwork training gave me real-world experience in community service. NMC shaped my career path completely."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-sky">NP</div>
-                  <div>
-                    <h4 class="testi-author-name">Neha Parmar</h4>
-                    <span class="testi-author-role">MSW Graduate (2023)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"Fashion Designing course at NMC was incredible — the studio, faculty, and practical exposure prepared me for the industry."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-red">RJ</div>
-                  <div>
-                    <h4 class="testi-author-name">Riya Joshi</h4>
-                    <span class="testi-author-role">DFD Student</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Second Set Students -->
-            <div class="testi-students-grid">
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"The computer lab facilities are excellent. I learned C++, Java, and Web Development with full practical exposure."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-sky">SP</div>
-                  <div>
-                    <h4 class="testi-author-name">Shreya Patel</h4>
-                    <span class="testi-author-role">BCA Student (2025)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"Commerce faculty here is amazing. Tally and GST certificate course gave me a huge advantage in placement interviews."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-gold">DV</div>
-                  <div>
-                    <h4 class="testi-author-name">Divya Vaghela</h4>
-                    <span class="testi-author-role">B.Com Graduate (2024)</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"The seminars and guest lectures from industry professionals gave us real-world perspective. Best college in Bhavnagar!"</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-red">MR</div>
-                  <div>
-                    <h4 class="testi-author-name">Mansi Rajput</h4>
-                    <span class="testi-author-role">BA Student</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="testi-student-card">
-                <div class="testi-student-rating">★★★★★</div>
-                <p class="testi-student-quote">"Yoga and naturopathy course changed my life perspective. The holistic approach to wellness education is unique."</p>
-                <div class="testi-student-author">
-                  <div class="testi-author-avatar testi-avatar-sky">AS</div>
-                  <div>
-                    <h4 class="testi-author-name">Anjali Shah</h4>
-                    <span class="testi-author-role">DNYS Student</span>
-                  </div>
-                </div>
+      <!-- Panel 2: Student Cards -->
+      <div class="digi-panel" id="studentsPanel">
+        <div class="stud-testi-grid">
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"The free bus pick-up service gave my parents complete peace of mind, and the BCA faculty supported me to launch my IT software career."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-red">PG</div>
+              <div>
+                <h4>Priyaba Gohil</h4>
+                <span>BCA Alumna (Batch 2024)</span>
               </div>
             </div>
           </div>
 
-          <button class="testi-arrow testi-arrow-right" data-dir="right" data-track="studentsTrack" aria-label="Next">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="9 18 15 12 9 6"/>
-            </svg>
-          </button>
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"The free blazer gift made us feel like executive professionals right from day one! Proud to be an NMCian."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-gold">KR</div>
+              <div>
+                <h4>Kavita Rathod</h4>
+                <span>BBA Student</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"MSW fieldwork training gave me real-world experience in community service. NMC shaped my career path completely."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-sky">NP</div>
+              <div>
+                <h4>Neha Parmar</h4>
+                <span>MSW Graduate (2023)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"Fashion Designing course at NMC was incredible — the studio, faculty, and practical exposure prepared me for the industry."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-red">RJ</div>
+              <div>
+                <h4>Riya Joshi</h4>
+                <span>DFD Student</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"The computer lab facilities are excellent. I learned C++, Java, and Web Development with full practical exposure."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-sky">SP</div>
+              <div>
+                <h4>Shreya Patel</h4>
+                <span>BCA Student (2025)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stud-testi-card">
+            <div class="stud-testi-stars">★★★★★</div>
+            <p class="stud-testi-quote">"Commerce faculty here is amazing. Tally and GST certificate course gave me a huge advantage in placement interviews."</p>
+            <div class="stud-testi-author">
+              <div class="stud-avatar stud-avatar-gold">DV</div>
+              <div>
+                <h4>Divya Vaghela</h4>
+                <span>B.Com Graduate (2024)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 14A. LATEST UPDATES & CIRCULARS -->
+  <section class="section-padding updates-section" id="updates">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Stay Informed</div>
+        <h2 class="section-title">Latest Updates &amp; <span>Circulars</span></h2>
+        <p class="section-description">Important announcements, exam schedules, and campus news.</p>
+      </div>
+
+      <div class="updates-grid">
+        <div class="update-card update-card-highlight">
+          <span class="update-date">10 Aug 2026</span>
+          <h4 class="update-title">Admission Open for 2026-27 Academic Year</h4>
+          <p class="update-desc">Applications are now being accepted for all UG, PG, and Diploma programs.</p>
+          <span class="update-tag">Admission</span>
+        </div>
+        <div class="update-card">
+          <span class="update-date">05 Aug 2026</span>
+          <h4 class="update-title">Semester 3 Exam Timetable Released</h4>
+          <p class="update-desc">Download the exam schedule from the university portal.</p>
+          <span class="update-tag update-tag-sky">Exam</span>
+        </div>
+        <div class="update-card">
+          <span class="update-date">01 Aug 2026</span>
+          <h4 class="update-title">National Workshop on Cyber Safety</h4>
+          <p class="update-desc">One-day awareness program for all students in auditorium.</p>
+          <span class="update-tag update-tag-gold">Event</span>
+        </div>
+        <div class="update-card">
+          <span class="update-date">28 Jul 2026</span>
+          <h4 class="update-title">Free Bus Route Schedule Updated</h4>
+          <p class="update-desc">New pickup points added for Sihor and Palitana routes.</p>
+          <span class="update-tag update-tag-emerald">Transport</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14B. PLACEMENT, TRAINING & CAREER DEVELOPMENT -->
+  <section class="section-padding placement-career-section" id="placements">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Career Growth</div>
+        <h2 class="section-title">Placement, Training &amp; <span>Career Development</span></h2>
+        <p class="section-description">Preparing female graduates for top careers through industry collaborations and active placement drives.</p>
+      </div>
+
+      <div class="placement-grid">
+        <div class="placement-stat-card">
+          <div class="placement-stat-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <div class="placement-stat-num">85%</div>
+          <div class="placement-stat-label">Placement Rate</div>
+        </div>
+        <div class="placement-stat-card">
+          <div class="placement-stat-icon placement-icon-gold">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="placement-stat-num">50+</div>
+          <div class="placement-stat-label">Company Partners</div>
+        </div>
+        <div class="placement-stat-card">
+          <div class="placement-stat-icon placement-icon-sky">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="placement-stat-num">200+</div>
+          <div class="placement-stat-label">Students Trained</div>
+        </div>
+        <div class="placement-stat-card">
+          <div class="placement-stat-icon placement-icon-emerald">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div class="placement-stat-num">10+</div>
+          <div class="placement-stat-label">MoU Signed</div>
+        </div>
+      </div>
+
+      <div class="mou-partners-bar">
+        <h4 class="mou-bar-title">Industry Collaborations &amp; MoUs</h4>
+        <div class="mou-chips">
+          <span class="mou-chip">🏢 Local Banking Partners</span>
+          <span class="mou-chip">🏥 Healthcare Institutes</span>
+          <span class="mou-chip">📊 General Insurance Agencies</span>
+          <span class="mou-chip">👗 Garment Export Units</span>
+          <span class="mou-chip">💻 IT &amp; Web Studios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14C. QUICK LINKS & E-RESOURCES -->
+  <section class="section-padding quicklinks-section" id="quicklinks">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Quick Access</div>
+        <h2 class="section-title">Quick Links &amp; <span>E-Resources</span></h2>
+        <p class="section-description">Important portals, government services, and educational resources at your fingertips.</p>
+      </div>
+
+      <div class="quicklinks-grid">
+        <!-- Apply & Admission -->
+        <a href="https://forms.gle/TBNKycyc6AjfipWc8" target="_blank" class="qlink-card qlink-red">
+          <div class="qlink-icon">📝</div>
+          <span class="qlink-label">Apply Online</span>
+        </a>
+        <a href="https://www.abc.gov.in/" target="_blank" class="qlink-card qlink-sky">
+          <div class="qlink-icon">🎓</div>
+          <span class="qlink-label">APAAR ID (ABC)</span>
+        </a>
+        <a href="https://www.digitalgujarat.gov.in/" target="_blank" class="qlink-card qlink-gold">
+          <div class="qlink-icon">🏛️</div>
+          <span class="qlink-label">Digital Gujarat</span>
+        </a>
+        <a href="https://gujgcas.gujarat.gov.in/" target="_blank" class="qlink-card qlink-emerald">
+          <div class="qlink-icon">📋</div>
+          <span class="qlink-label">GCAS Registration</span>
+        </a>
+
+        <!-- E-Resources -->
+        <a href="https://swayam.gov.in/" target="_blank" class="qlink-card qlink-purple">
+          <div class="qlink-icon">📚</div>
+          <span class="qlink-label">SWAYAM</span>
+        </a>
+        <a href="https://swayamprabha.gov.in/" target="_blank" class="qlink-card qlink-sky">
+          <div class="qlink-icon">📺</div>
+          <span class="qlink-label">SWAYAM PRABHA</span>
+        </a>
+        <a href="https://epathshala.nic.in/" target="_blank" class="qlink-card qlink-gold">
+          <div class="qlink-icon">📖</div>
+          <span class="qlink-label">E-PATHSHALA</span>
+        </a>
+        <a href="https://ndl.iitkgp.ac.in/" target="_blank" class="qlink-card qlink-red">
+          <div class="qlink-icon">🏛️</div>
+          <span class="qlink-label">NDLI Library</span>
+        </a>
+
+        <!-- University & Results -->
+        <a href="https://mkbhavuni.edu.in/" target="_blank" class="qlink-card qlink-emerald">
+          <div class="qlink-icon">🎯</div>
+          <span class="qlink-label">Uni Results</span>
+        </a>
+        <a href="https://mkbhavuni.edu.in/" target="_blank" class="qlink-card qlink-purple">
+          <div class="qlink-icon">📄</div>
+          <span class="qlink-label">Syllabus</span>
+        </a>
+        <a href="tel:1930" class="qlink-card qlink-red">
+          <div class="qlink-icon">🛡️</div>
+          <span class="qlink-label">Cyber Awareness (1930)</span>
+        </a>
+        <a href="#contact" class="qlink-card qlink-sky">
+          <div class="qlink-icon">📞</div>
+          <span class="qlink-label">Contact Us</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14D. FUTURE VISION -->
+  <section class="section-padding future-vision-section" id="future-vision">
+    <div class="container">
+      <div class="fv-content">
+        <div class="fv-text">
+          <div class="section-subtitle">Looking Ahead</div>
+          <h2 class="section-title">Our Future <span>Vision</span></h2>
+          <p class="fv-description">We envision NMC as a leading center for women's higher education in Gujarat — offering globally competitive programs, cutting-edge research facilities, and 100% career readiness for every graduate.</p>
+          <div class="fv-goals">
+            <div class="fv-goal-item">
+              <span class="fv-goal-icon">🎯</span>
+              <span>NAAC Accreditation by 2027</span>
+            </div>
+            <div class="fv-goal-item">
+              <span class="fv-goal-icon">🌐</span>
+              <span>International MoU Partnerships</span>
+            </div>
+            <div class="fv-goal-item">
+              <span class="fv-goal-icon">💻</span>
+              <span>AI &amp; Data Science Programs</span>
+            </div>
+            <div class="fv-goal-item">
+              <span class="fv-goal-icon">🏢</span>
+              <span>On-Campus Incubation Center</span>
+            </div>
+          </div>
+        </div>
+        <div class="fv-visual">
+          <div class="fv-year-badge">2030</div>
+          <h3 class="fv-tagline">Empowering 10,000+ Women Graduates</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14E. ALUMNI NETWORK -->
+  <section class="section-padding alumni-section" id="alumni">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-subtitle">Our Community</div>
+        <h2 class="section-title">Alumni <span>Network</span></h2>
+        <p class="section-description">Stay connected with your alma mater and fellow NMCians.</p>
+      </div>
+
+      <div class="alumni-grid">
+        <div class="alumni-stat">
+          <div class="alumni-stat-num">5000+</div>
+          <div class="alumni-stat-label">Graduated Alumni</div>
+        </div>
+        <div class="alumni-stat">
+          <div class="alumni-stat-num">15+</div>
+          <div class="alumni-stat-label">Years of Legacy</div>
+        </div>
+        <div class="alumni-stat">
+          <div class="alumni-stat-num">20+</div>
+          <div class="alumni-stat-label">Industries Represented</div>
+        </div>
+        <div class="alumni-stat">
+          <div class="alumni-stat-num">100%</div>
+          <div class="alumni-stat-label">Pride &amp; Connection</div>
+        </div>
+      </div>
+
+      <div class="alumni-cta">
+        <p class="alumni-cta-text">Are you an NMC alumni? Join our growing network and stay connected.</p>
+        <a href="#contact" class="btn btn-crimson">Join Alumni Network →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14F. ACADEMIC CALENDAR & TIMETABLE -->
+  <section class="section-padding calendar-section" id="calendar">
+    <div class="container">
+      <div class="calendar-flex">
+        <div class="calendar-info">
+          <div class="section-subtitle">Academic Planner</div>
+          <h2 class="section-title">Year Calendar &amp; <span>Timetable</span></h2>
+          <p style="color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.65;">Access the complete academic year calendar with exam dates, holidays, events, and semester timetables.</p>
+          <div class="calendar-links">
+            <a href="#" class="calendar-link-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Academic Calendar 2026-27
+            </a>
+            <a href="#" class="calendar-link-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Download Timetable (PDF)
+            </a>
+            <a href="#" class="calendar-link-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Exam Schedule
+            </a>
+          </div>
+        </div>
+        <div class="calendar-visual">
+          <div class="calendar-card-mini">
+            <div class="calendar-card-month">August 2026</div>
+            <div class="calendar-card-events">
+              <div class="cal-event"><span class="cal-dot"></span> Independence Day - Holiday</div>
+              <div class="cal-event"><span class="cal-dot cal-dot-gold"></span> Sem 3 Exam Starts</div>
+              <div class="cal-event"><span class="cal-dot cal-dot-sky"></span> National Workshop</div>
+              <div class="cal-event"><span class="cal-dot cal-dot-emerald"></span> Sports Week</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
