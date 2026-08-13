@@ -267,4 +267,51 @@ document.addEventListener('DOMContentLoaded', () => {
       awardsGallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
   }
+
+  // 11. Certificate Courses Scroll Arrows
+  const certTrack = document.getElementById('certTrack');
+  const certPrev = document.getElementById('certPrev');
+  const certNext = document.getElementById('certNext');
+
+  if (certTrack && certPrev && certNext) {
+    const certScrollAmount = 500;
+
+    certNext.addEventListener('click', () => {
+      certTrack.scrollBy({ left: certScrollAmount, behavior: 'smooth' });
+    });
+
+    certPrev.addEventListener('click', () => {
+      certTrack.scrollBy({ left: -certScrollAmount, behavior: 'smooth' });
+    });
+  }
+
+  // 12. Testimonials Tab Switcher
+  const testiTabs = document.querySelectorAll('.testi-tab');
+  const testiPanels = document.querySelectorAll('.testi-panel');
+
+  testiTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-target');
+
+      testiTabs.forEach(t => t.classList.remove('active'));
+      testiPanels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const targetPanel = document.getElementById(target);
+      if (targetPanel) targetPanel.classList.add('active');
+    });
+  });
+
+  // 13. Testimonials Scroll Arrows
+  document.querySelectorAll('.testi-arrow').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const dir = btn.getAttribute('data-dir');
+      const trackId = btn.getAttribute('data-track');
+      const track = document.getElementById(trackId);
+      if (track) {
+        const scrollAmount = track.offsetWidth;
+        track.scrollBy({ left: dir === 'right' ? scrollAmount : -scrollAmount, behavior: 'smooth' });
+      }
+    });
+  });
 });

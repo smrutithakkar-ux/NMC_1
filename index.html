@@ -219,6 +219,19 @@
   <!-- 5B. OUR VISION & OUR MISSION - CREATIVE DARK SECTION -->
   <section class="section-padding vision-mission-section">
     <div class="container">
+      <!-- Decorative Background Elements -->
+      <div class="vm-bg-elements">
+        <div class="vm-float-circle vm-circle-1"></div>
+        <div class="vm-float-circle vm-circle-2"></div>
+        <div class="vm-float-circle vm-circle-3"></div>
+        <div class="vm-float-dot vm-dot-1"></div>
+        <div class="vm-float-dot vm-dot-2"></div>
+        <div class="vm-float-dot vm-dot-3"></div>
+        <div class="vm-float-dot vm-dot-4"></div>
+        <div class="vm-float-ring vm-ring-1"></div>
+        <div class="vm-float-ring vm-ring-2"></div>
+      </div>
+
       <div class="vm-section-header">
         <span class="vm-section-badge">Our Purpose & Direction</span>
         <h2 class="vm-section-title">Vision & Mission</h2>
@@ -227,8 +240,9 @@
       <div class="vm-duo-grid">
 
         <!-- OUR VISION -->
-        <div class="vm-duo-card">
+        <div class="vm-duo-card vm-card-animate">
           <div class="vm-duo-accent vm-accent-sky"></div>
+          <div class="vm-card-glow vm-glow-sky"></div>
           <h3 class="vm-duo-heading">Our Vision</h3>
           <div class="vm-duo-divider"></div>
           <p class="vm-duo-text">
@@ -243,10 +257,11 @@
         </div>
 
         <!-- OUR MISSION -->
-        <div class="vm-duo-card">
+        <div class="vm-duo-card vm-card-animate">
           <div class="vm-duo-accent vm-accent-gold"></div>
+          <div class="vm-card-glow vm-glow-gold"></div>
           <h3 class="vm-duo-heading">Our Mission</h3>
-          <div class="vm-duo-divider"></div>
+          <div class="vm-duo-divider vm-divider-gold"></div>
           <p class="vm-duo-text">
             To improve the quality and availability of girls' education. To create a desire and to provide an ambience
             that encourages the apperception, dissemination, and origination of new ideas and understanding. To
@@ -726,115 +741,123 @@
         <p class="section-description">Industry-recognized certificate programs to boost your career alongside your degree.</p>
       </div>
 
-      <div class="cert-courses-grid">
-        <!-- Course 1 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">01</div>
-          <div class="cert-course-icon cert-icon-red">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 20h9"/>
-              <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-            </svg>
+      <div class="cert-slider-wrap">
+        <button class="cert-arrow cert-arrow-left" id="certPrev" aria-label="Previous Course">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"/>
+          </svg>
+        </button>
+
+        <div class="cert-cards-track" id="certTrack">
+          <!-- Card 1 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Tally ERP Accounting">
+              <span class="cert-hcard-badge">Popular</span>
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag">Accounting &amp; Finance</span>
+              <h4 class="cert-hcard-title">Tally ERP &amp; GST Accounting</h4>
+              <p class="cert-hcard-desc">Practical computerized accounting, GST filing &amp; taxation for commerce students with hands-on training.</p>
+              <div class="cert-hcard-meta">
+                <span>6 Months</span>
+                <span>Intermediate</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
           </div>
-          <h4 class="cert-course-title">Tally ERP &amp; GST Accounting</h4>
-          <p class="cert-course-desc">Practical computerized accounting, GST filing &amp; taxation for commerce students.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">6 Months</span>
-            <span class="cert-level">Intermediate</span>
+
+          <!-- Card 2 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop" alt="Graphic Design">
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag cert-tag-sky">Design &amp; Creative</span>
+              <h4 class="cert-hcard-title">Graphic Design &amp; Photoshop</h4>
+              <p class="cert-hcard-desc">UI design, photo editing, digital media &amp; creative visual communication workshop.</p>
+              <div class="cert-hcard-meta">
+                <span>4 Months</span>
+                <span>Beginner</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=300&fit=crop" alt="Communication Skills">
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag cert-tag-gold">Professional Growth</span>
+              <h4 class="cert-hcard-title">English Communication &amp; Soft Skills</h4>
+              <p class="cert-hcard-desc">Public speaking, personality development &amp; corporate interview preparation.</p>
+              <div class="cert-hcard-meta">
+                <span>3 Months</span>
+                <span>All Levels</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Environmental Studies">
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag cert-tag-emerald">Health &amp; Wellness</span>
+              <h4 class="cert-hcard-title">Environmental &amp; Mental Health</h4>
+              <p class="cert-hcard-desc">Pollution awareness, sustainability science &amp; mental wellbeing certification.</p>
+              <div class="cert-hcard-meta">
+                <span>3 Months</span>
+                <span>Beginner</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Computer Skills">
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag cert-tag-purple">IT &amp; Computing</span>
+              <h4 class="cert-hcard-title">Basic Computer &amp; MS Office</h4>
+              <p class="cert-hcard-desc">Word, Excel, PowerPoint &amp; internet skills for complete digital literacy.</p>
+              <div class="cert-hcard-meta">
+                <span>2 Months</span>
+                <span>Beginner</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="cert-hcard">
+            <div class="cert-hcard-img">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Digital Marketing">
+            </div>
+            <div class="cert-hcard-content">
+              <span class="cert-hcard-tag cert-tag-rose">Marketing</span>
+              <h4 class="cert-hcard-title">Digital Marketing Fundamentals</h4>
+              <p class="cert-hcard-desc">SEO, social media marketing, content strategy &amp; analytics basics.</p>
+              <div class="cert-hcard-meta">
+                <span>4 Months</span>
+                <span>Beginner</span>
+              </div>
+              <a href="#contact" class="cert-hcard-btn">Enroll Now →</a>
+            </div>
           </div>
         </div>
 
-        <!-- Course 2 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">02</div>
-          <div class="cert-course-icon cert-icon-sky">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-              <circle cx="8.5" cy="8.5" r="1.5"/>
-              <polyline points="21 15 16 10 5 21"/>
-            </svg>
-          </div>
-          <h4 class="cert-course-title">Graphic Design &amp; Photoshop</h4>
-          <p class="cert-course-desc">UI design, photo editing, digital media &amp; creative visual communication.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">4 Months</span>
-            <span class="cert-level">Beginner</span>
-          </div>
-        </div>
-
-        <!-- Course 3 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">03</div>
-          <div class="cert-course-icon cert-icon-gold">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-          <h4 class="cert-course-title">English Communication &amp; Soft Skills</h4>
-          <p class="cert-course-desc">Public speaking, personality development &amp; corporate interview preparation.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">3 Months</span>
-            <span class="cert-level">All Levels</span>
-          </div>
-        </div>
-
-        <!-- Course 4 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">04</div>
-          <div class="cert-course-icon cert-icon-emerald">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-            </svg>
-          </div>
-          <h4 class="cert-course-title">Environmental &amp; Mental Health</h4>
-          <p class="cert-course-desc">Pollution awareness, sustainability science &amp; mental wellbeing certification.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">3 Months</span>
-            <span class="cert-level">Beginner</span>
-          </div>
-        </div>
-
-        <!-- Course 5 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">05</div>
-          <div class="cert-course-icon cert-icon-purple">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="16 18 22 12 16 6"/>
-              <polyline points="8 6 2 12 8 18"/>
-              <line x1="12" y1="2" x2="12" y2="22"/>
-            </svg>
-          </div>
-          <h4 class="cert-course-title">Basic Computer &amp; MS Office</h4>
-          <p class="cert-course-desc">Word, Excel, PowerPoint &amp; internet skills for digital literacy.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">2 Months</span>
-            <span class="cert-level">Beginner</span>
-          </div>
-        </div>
-
-        <!-- Course 6 -->
-        <div class="cert-course-card">
-          <div class="cert-course-number">06</div>
-          <div class="cert-course-icon cert-icon-rose">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/>
-              <path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-              <path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/>
-              <path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/>
-              <path d="M14 14.5c0-.83.67-1.5 1.5-1.5h5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5z"/>
-              <path d="M15.5 19H14v1.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/>
-              <path d="M10 9.5C10 10.33 9.33 11 8.5 11h-5C2.67 11 2 10.33 2 9.5S2.67 8 3.5 8h5c.83 0 1.5.67 1.5 1.5z"/>
-              <path d="M8.5 5H10V3.5C10 2.67 9.33 2 8.5 2S7 2.67 7 3.5 7.67 5 8.5 5z"/>
-            </svg>
-          </div>
-          <h4 class="cert-course-title">Digital Marketing Fundamentals</h4>
-          <p class="cert-course-desc">SEO, social media marketing, content strategy &amp; analytics basics.</p>
-          <div class="cert-course-meta">
-            <span class="cert-duration">4 Months</span>
-            <span class="cert-level">Beginner</span>
-          </div>
-        </div>
+        <button class="cert-arrow cert-arrow-right" id="certNext" aria-label="Next Course">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </button>
       </div>
     </div>
   </section>
@@ -848,47 +871,249 @@
         <p class="section-description">Inspiring words from academic dignitaries, parents, and successful alumnae.</p>
       </div>
 
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "Nandkunvarba Mahila College has set a benchmark for women's higher education in Bhavnagar with its free
-            transportation and high academic standard."
-          </p>
-          <div class="test-user">
-            <div class="test-avatar">VC</div>
-            <div>
-              <h4 class="test-name">University
-                Dignitary</h4>
-              <span class="test-desc">M.K. Bhavnagar University</span>
-            </div>
-          </div>
-        </div>
+      <!-- Tab Switcher -->
+      <div class="testi-tabs">
+        <button class="testi-tab active" data-target="dignitary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+          Dignitary Testimonials
+        </button>
+        <button class="testi-tab" data-target="students">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          Student Testimonials
+        </button>
+      </div>
 
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "The free bus pick-up service gave my parents complete peace of mind, and the BCA faculty supported me to
-            launch my IT software career."
-          </p>
-          <div class="test-user">
-            <div class="test-avatar">PG</div>
-            <div>
-              <h4 class="test-name">Priyaba Gohil</h4>
-              <span class="test-desc">BCA Alumna (Batch 2024)</span>
-            </div>
-          </div>
-        </div>
+      <!-- Dignitary Testimonials -->
+      <div class="testi-panel active" id="dignitary">
+        <div class="testi-scroll-wrap">
+          <button class="testi-arrow testi-arrow-left" data-dir="left" data-track="dignitaryTrack" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
 
-        <div class="testimonial-card">
-          <p class="test-quote">
-            "The free blazer gift made us feel like executive professionals right from day one! Proud to be an NMCian."
-          </p>
-          <div class="test-user">
-            <div class="test-avatar">KR</div>
-            <div>
-              <h4 class="test-name">Kavita Rathod</h4>
-              <span class="test-desc">BBA Student</span>
+          <div class="testi-scroll-track" id="dignitaryTrack">
+            <div class="testi-featured-row">
+              <!-- Large Featured Quote -->
+              <div class="testi-featured">
+                <div class="testi-quote-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                  </svg>
+                </div>
+                <p class="testi-featured-quote">"Nandkunvarba Mahila College has set a benchmark for women's higher education in Bhavnagar. Their commitment to free transportation, modern infrastructure, and high academic standard makes them a model institution for women's empowerment."</p>
+                <div class="testi-featured-author">
+                  <div class="testi-author-avatar testi-avatar-red">VC</div>
+                  <div>
+                    <h4 class="testi-author-name">Vice Chancellor</h4>
+                    <span class="testi-author-role">M.K. Bhavnagar University</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Side Quotes -->
+              <div class="testi-side-stack">
+                <div class="testi-side-card">
+                  <p class="testi-side-quote">"The college's dedication to women's education through innovative programs and zero-cost facilities is truly commendable."</p>
+                  <div class="testi-side-author">
+                    <div class="testi-author-avatar testi-avatar-gold">DR</div>
+                    <div>
+                      <h4 class="testi-author-name">Dr. Rajesh Patel</h4>
+                      <span class="testi-author-role">Education Board Member</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testi-side-card">
+                  <p class="testi-side-quote">"An institution that truly lives by its mission of empowering young women with quality education."</p>
+                  <div class="testi-side-author">
+                    <div class="testi-author-avatar testi-avatar-sky">SM</div>
+                    <div>
+                      <h4 class="testi-author-name">Shri Mehta</h4>
+                      <span class="testi-author-role">Trust Chairman</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Set -->
+            <div class="testi-featured-row">
+              <div class="testi-featured">
+                <div class="testi-quote-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.15">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                  </svg>
+                </div>
+                <p class="testi-featured-quote">"NMC's approach to holistic women's education — combining academics with personality development and career skills — creates well-rounded graduates ready for the modern workforce."</p>
+                <div class="testi-featured-author">
+                  <div class="testi-author-avatar testi-avatar-gold">DM</div>
+                  <div>
+                    <h4 class="testi-author-name">District Magistrate</h4>
+                    <span class="testi-author-role">Bhavnagar District</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-side-stack">
+                <div class="testi-side-card">
+                  <p class="testi-side-quote">"The trust's vision of providing free transport has removed a major barrier to women's education in rural areas."</p>
+                  <div class="testi-side-author">
+                    <div class="testi-author-avatar testi-avatar-sky">AK</div>
+                    <div>
+                      <h4 class="testi-author-name">Prof. Anil Kumar</h4>
+                      <span class="testi-author-role">Academic Advisor</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testi-side-card">
+                  <p class="testi-side-quote">"A proud example of how private institutions can serve public good through accessible quality education."</p>
+                  <div class="testi-side-author">
+                    <div class="testi-author-avatar testi-avatar-red">JP</div>
+                    <div>
+                      <h4 class="testi-author-name">Dr. Jayanti Patel</h4>
+                      <span class="testi-author-role">UGC Panel Member</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <button class="testi-arrow testi-arrow-right" data-dir="right" data-track="dignitaryTrack" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Student Testimonials -->
+      <div class="testi-panel" id="students">
+        <div class="testi-scroll-wrap">
+          <button class="testi-arrow testi-arrow-left" data-dir="left" data-track="studentsTrack" aria-label="Previous">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"/>
+            </svg>
+          </button>
+
+          <div class="testi-scroll-track" id="studentsTrack">
+            <div class="testi-students-grid">
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"The free bus pick-up service gave my parents complete peace of mind, and the BCA faculty supported me to launch my IT software career."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-red">PG</div>
+                  <div>
+                    <h4 class="testi-author-name">Priyaba Gohil</h4>
+                    <span class="testi-author-role">BCA Alumna (Batch 2024)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"The free blazer gift made us feel like executive professionals right from day one! Proud to be an NMCian."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-gold">KR</div>
+                  <div>
+                    <h4 class="testi-author-name">Kavita Rathod</h4>
+                    <span class="testi-author-role">BBA Student</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"MSW fieldwork training gave me real-world experience in community service. NMC shaped my career path completely."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-sky">NP</div>
+                  <div>
+                    <h4 class="testi-author-name">Neha Parmar</h4>
+                    <span class="testi-author-role">MSW Graduate (2023)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"Fashion Designing course at NMC was incredible — the studio, faculty, and practical exposure prepared me for the industry."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-red">RJ</div>
+                  <div>
+                    <h4 class="testi-author-name">Riya Joshi</h4>
+                    <span class="testi-author-role">DFD Student</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Set Students -->
+            <div class="testi-students-grid">
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"The computer lab facilities are excellent. I learned C++, Java, and Web Development with full practical exposure."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-sky">SP</div>
+                  <div>
+                    <h4 class="testi-author-name">Shreya Patel</h4>
+                    <span class="testi-author-role">BCA Student (2025)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"Commerce faculty here is amazing. Tally and GST certificate course gave me a huge advantage in placement interviews."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-gold">DV</div>
+                  <div>
+                    <h4 class="testi-author-name">Divya Vaghela</h4>
+                    <span class="testi-author-role">B.Com Graduate (2024)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"The seminars and guest lectures from industry professionals gave us real-world perspective. Best college in Bhavnagar!"</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-red">MR</div>
+                  <div>
+                    <h4 class="testi-author-name">Mansi Rajput</h4>
+                    <span class="testi-author-role">BA Student</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testi-student-card">
+                <div class="testi-student-rating">★★★★★</div>
+                <p class="testi-student-quote">"Yoga and naturopathy course changed my life perspective. The holistic approach to wellness education is unique."</p>
+                <div class="testi-student-author">
+                  <div class="testi-author-avatar testi-avatar-sky">AS</div>
+                  <div>
+                    <h4 class="testi-author-name">Anjali Shah</h4>
+                    <span class="testi-author-role">DNYS Student</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="testi-arrow testi-arrow-right" data-dir="right" data-track="studentsTrack" aria-label="Next">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"/>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
