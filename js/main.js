@@ -173,9 +173,98 @@ document.addEventListener('DOMContentLoaded', () => {
           submitBtn.disabled = false;
           submitBtn.innerHTML = oldText;
           if (regModal) regModal.classList.remove('active');
-          document.body.style.overflow = '';
         }, 800);
       }
     });
   });
+
+  // 9. Interactive Hero Banner Slider System
+  const sliderTrack = document.querySelector('.banner-slider-track');
+  const bannerSlides = document.querySelectorAll('.banner-slide');
+  const prevBtn = document.getElementById('bannerPrev');
+  const nextBtn = document.getElementById('bannerNext');
+  const dots = document.querySelectorAll('.banner-dot');
+  const sliderWrapper = document.getElementById('bannerSlider');
+
+  if (sliderTrack && bannerSlides.length > 0) {
+    let currentSlide = 0;
+    const totalSlides = bannerSlides.length;
+    let autoSlideInterval = null;
+
+    const goToSlide = (index) => {
+      currentSlide = (index + totalSlides) % totalSlides;
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      dots.forEach((dot, idx) => {
+        if (idx === currentSlide) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    };
+
+    const nextSlide = () => goToSlide(currentSlide + 1);
+    const prevSlide = () => goToSlide(currentSlide - 1);
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextSlide();
+        resetAutoSlide();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevSlide();
+        resetAutoSlide();
+      });
+    }
+
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', (e) => {
+        e.stopPropagation();
+        goToSlide(idx);
+        resetAutoSlide();
+      });
+    });
+
+    // On-click on the banner image itself advances to the next slide
+    if (sliderWrapper) {
+      sliderWrapper.addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+      });
+    }
+
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(nextSlide, 5000);
+    };
+
+    const resetAutoSlide = () => {
+      if (autoSlideInterval) clearInterval(autoSlideInterval);
+      startAutoSlide();
+    };
+
+    startAutoSlide();
+  }
+
+  // 10. Awards Section Scroll Arrows
+  const awardsGallery = document.getElementById('awardsGallery');
+  const awardPrev = document.getElementById('awardPrev');
+  const awardNext = document.getElementById('awardNext');
+
+  if (awardsGallery && awardPrev && awardNext) {
+    const scrollAmount = 340;
+
+    awardNext.addEventListener('click', () => {
+      awardsGallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    awardPrev.addEventListener('click', () => {
+      awardsGallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+  }
 });
