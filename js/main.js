@@ -3,10 +3,10 @@
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Sticky Header Effect
-  const header = document.querySelector('.header');
+  // 1. Sticky Header Effect (Transparent -> Solid on scroll)
+  const header = document.querySelector('.hero-header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 100) {
       header?.classList.add('scrolled');
     } else {
       header?.classList.remove('scrolled');
@@ -15,20 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Mobile Menu Toggle
   const hamburger = document.getElementById('hamburger');
-  const navMenu = document.querySelector('.nav-menu');
+  const heroNav = document.querySelector('.hero-nav');
 
-  if (hamburger && navMenu) {
+  if (hamburger && heroNav) {
     hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
+      heroNav.classList.toggle('active');
     });
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => navMenu.classList.remove('active'));
+    document.querySelectorAll('.hero-nav-link').forEach(link => {
+      link.addEventListener('click', () => heroNav.classList.remove('active'));
     });
   }
 
   // 3. Stats Counter Animation
-  const statNumbers = document.querySelectorAll('.stat-number');
+  const statNumbers = document.querySelectorAll('.stat-premium-number');
   let animatedStats = false;
 
   const animateStats = () => {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
-  const statsSection = document.querySelector('.stats-counter-section');
+  const statsSection = document.querySelector('.stats-premium-section');
   if (statsSection) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -178,78 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 9. Interactive Hero Banner Slider System
-  const sliderTrack = document.querySelector('.banner-slider-track');
-  const bannerSlides = document.querySelectorAll('.banner-slide');
-  const prevBtn = document.getElementById('bannerPrev');
-  const nextBtn = document.getElementById('bannerNext');
-  const dots = document.querySelectorAll('.banner-dot');
-  const sliderWrapper = document.getElementById('bannerSlider');
-
-  if (sliderTrack && bannerSlides.length > 0) {
-    let currentSlide = 0;
-    const totalSlides = bannerSlides.length;
-    let autoSlideInterval = null;
-
-    const goToSlide = (index) => {
-      currentSlide = (index + totalSlides) % totalSlides;
-      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-      dots.forEach((dot, idx) => {
-        if (idx === currentSlide) {
-          dot.classList.add('active');
-        } else {
-          dot.classList.remove('active');
-        }
-      });
-    };
-
-    const nextSlide = () => goToSlide(currentSlide + 1);
-    const prevSlide = () => goToSlide(currentSlide - 1);
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        nextSlide();
-        resetAutoSlide();
-      });
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        prevSlide();
-        resetAutoSlide();
-      });
-    }
-
-    dots.forEach((dot, idx) => {
-      dot.addEventListener('click', (e) => {
-        e.stopPropagation();
-        goToSlide(idx);
-        resetAutoSlide();
-      });
-    });
-
-    // On-click on the banner image itself advances to the next slide
-    if (sliderWrapper) {
-      sliderWrapper.addEventListener('click', () => {
-        nextSlide();
-        resetAutoSlide();
-      });
-    }
-
-    const startAutoSlide = () => {
-      autoSlideInterval = setInterval(nextSlide, 5000);
-    };
-
-    const resetAutoSlide = () => {
-      if (autoSlideInterval) clearInterval(autoSlideInterval);
-      startAutoSlide();
-    };
-
-    startAutoSlide();
-  }
+  // 9. (Banner slider removed - now using static fullscreen hero)
 
   // 10. Awards Section Scroll Arrows
   const awardsGallery = document.getElementById('awardsGallery');
@@ -339,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ========================================================================== */
 
 // Scroll Reveal Animation
-const revealElements = document.querySelectorAll('.section-header, .stat-box, .why-pro-card, .facility-card, .prog-card, .cert-hcard, .update-card, .placement-stat-card, .qlink-card, .alumni-stat, .fv-goal-item, .calendar-link-btn, .testimonial-card, .testi-student-card, .testi-side-card, .faculty-img-card');
+const revealElements = document.querySelectorAll('.section-header, .stat-premium-card, .why-pro-card, .facility-card, .prog-card, .cert-hcard, .update-card, .placement-stat-card, .qlink-card, .alumni-stat, .fv-goal-item, .calendar-link-btn, .testimonial-card, .testi-student-card, .testi-side-card, .faculty-img-card, .about-premium-img-wrap, .about-premium-content');
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {

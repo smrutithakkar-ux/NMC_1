@@ -24,179 +24,139 @@
 
 
 
-  <!-- 2. HEADER & TWO-TIER NAVIGATION NAVBAR -->
-  <header class="header" id="header">
-    <div class="header-container">
-      <!-- Top Row: Full Logo Image + Helpline + Reference Buttons -->
-      <div class="header-top-row">
-        <a href="index.html" class="brand-logo-link" title="Nandkunvarba Mahila College">
-          <img src="NMC-logo.png" alt="Nandkunvarba Mahila College Logo" class="header-full-logo">
-        </a>
+  <!-- 2. HEADER - TRANSPARENT OVERLAY ON HERO -->
+  <header class="hero-header" id="header">
+    <div class="hero-header-container">
+      <!-- College Logo -->
+      <a href="index.html" class="hero-logo-box" title="Nandkunvarba Mahila College">
+        <img src="Images/New Logo 1.png" alt="NMC Logo" class="hero-logo-img">
+      </a>
 
-        <div class="header-top-actions">
-          <div class="header-helpline">
-            <span class="helpline-label">📞 Admission Helpline:</span>
-            <span class="helpline-num">0278 - 2471813 / 14 / 15 / 16 / 17</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bottom Row: Clean Horizontal Navigation Menu Bar -->
-      <div class="header-nav-row">
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link active">Home</a></li>
-          <li><a href="#overview" class="nav-link">About Us</a></li>
-          <li><a href="#facilities" class="nav-link">Campus Facilities</a></li>
-          <li><a href="#tour" class="nav-link">360° Virtual Tour</a></li>
-          <li><a href="#programs" class="nav-link">Academic Programs</a></li>
-          <li><a href="#certificates" class="nav-link">Certificate Courses</a></li>
-          <li><a href="#faculty" class="nav-link">Faculty</a></li>
-          <li><a href="#gallery" class="nav-link">Gallery</a></li>
-          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      <!-- Navigation Links -->
+      <nav class="hero-nav">
+        <ul class="hero-nav-menu">
+          <li><a href="#home" class="hero-nav-link active">HOME</a></li>
+          <li><a href="#overview" class="hero-nav-link">ABOUT US</a></li>
+          <li><a href="#gallery" class="hero-nav-link">GALLERY</a></li>
+          <li class="hero-nav-dropdown">
+            <a href="#programs" class="hero-nav-link">COURSES <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          </li>
+          <li class="hero-nav-dropdown">
+            <a href="#faculty" class="hero-nav-link">OUR STAFF <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          </li>
+          <li class="hero-nav-dropdown">
+            <a href="#" class="hero-nav-link">ACTIVITIES <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          </li>
+          <li><a href="#contact" class="hero-nav-link">CONTACT</a></li>
+          <li><a href="#" class="hero-nav-link">TOPPERS</a></li>
+          <li class="hero-nav-dropdown">
+            <a href="#" class="hero-nav-link">STUDENT CORNER <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+          </li>
+          <li><a href="#" class="hero-nav-link">ALUMNI LEGACY</a></li>
         </ul>
+      </nav>
 
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <!-- Mobile Hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </header>
 
-  <!-- 3. DYNAMIC HERO BANNER SLIDER (FULL WIDTH) -->
-  <section class="hero-slider-section" id="home">
-    <div class="banner-slider-wrapper" id="bannerSlider" title="Click anywhere to slide banner">
-      <!-- Track containing slides -->
-      <div class="banner-slider-track">
-        <!-- Slide 1 -->
-        <div class="banner-slide active" data-index="0">
-          <img src="Banner1_800.png" alt="NMC Fashion Designing & Extra Activity Banner 1" class="banner-img">
-        </div>
-        <!-- Slide 2 -->
-        <div class="banner-slide" data-index="1">
-          <img src="Banner2_800.png" alt="NMC Fashion Designing Admission Open Banner 2" class="banner-img">
-        </div>
-      </div>
+  <!-- 3. FULL-SCREEN HERO BANNER WITH OVERLAY TEXT -->
+  <section class="hero-fullscreen" id="home">
+    <div class="hero-bg-image">
+      <img src="Images/Hero_Section.png" alt="NMC Campus Life" class="hero-bg-img">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-main-title"><em>Innovative learning</em><br><em>for everyone</em></h1>
+      <p class="hero-subtitle">Graduates hold a position related to their degree or<br>career objective.</p>
+      <a href="#programs" class="hero-apply-btn">
+        <span class="hero-apply-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </span>
+        <span>APPLY NOW</span>
+      </a>
+    </div>
 
-      <!-- Modern Unobtrusive Bottom Control Bar (Prev / Dots / Next) -->
-      <div class="banner-controls-bar">
-        <button class="banner-nav-btn banner-prev" id="bannerPrev" aria-label="Previous Banner">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
-          <!-- <span>Prev</span> -->
-        </button>
-
-        <div class="banner-dots" id="bannerDots">
-          <span class="banner-dot active" data-slide="0" title="Banner 1"></span>
-          <span class="banner-dot" data-slide="1" title="Banner 2"></span>
-        </div>
-
-        <button class="banner-nav-btn banner-next" id="bannerNext" aria-label="Next Banner">
-          <!-- <span>Next</span> -->
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-            stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </button>
+    <!-- MARQUEE TICKER - Inside hero at bottom -->
+    <div class="marquee-ticker">
+      <div class="marquee-track">
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
+        <span class="marquee-text">TRANSFORMING LEARNING FOR A BRIGHT FUTURE</span>
+        <span class="marquee-dot">•</span>
       </div>
     </div>
   </section>
 
-  <!-- 4. STATS COUNTER BAR (STUDENTS ON CAMPUS / YEARS OF EXCELLENCE) -->
-  <section class="stats-counter-section">
+  <!-- 4. PREMIUM STATS COUNTER -->
+  <section class="stats-premium-section">
     <div class="container">
-      <div class="stats-card-grid">
-        <div class="stat-box">
-          <div class="stat-icon icon-crimson">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
-              <path d="M6 12v5c3 3 9 3 12 0v-5" />
-            </svg>
-          </div>
-          <div>
-            <div class="stat-number" data-target="15" data-suffix="+">0</div>
-            <div class="stat-label">Years of Academic Excellence</div>
-          </div>
+      <div class="stats-premium-grid">
+        <div class="stat-premium-card">
+          <div class="stat-premium-number" data-target="15" data-suffix="+">0</div>
+          <div class="stat-premium-label">Years of Academic Excellence</div>
         </div>
 
-        <div class="stat-box">
-          <div class="stat-icon icon-gold">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v9c0 .6.4 1 1 1h2" />
-              <circle cx="7" cy="17" r="2" />
-              <circle cx="17" cy="17" r="2" />
-            </svg>
-          </div>
-          <div>
-            <div class="stat-number" data-target="100" data-suffix="%">0</div>
-            <div class="stat-label">Free Bus Transport Coverage</div>
-          </div>
+        <div class="stat-premium-card">
+          <div class="stat-premium-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-premium-label">Free Bus Transport Coverage</div>
         </div>
 
-        <div class="stat-box">
-          <div class="stat-icon icon-sky">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-              <path d="M8 7h8" />
-              <path d="M8 11h6" />
-            </svg>
-          </div>
-          <div>
-            <div class="stat-number" data-target="12" data-suffix="+">0</div>
-            <div class="stat-label">Degree &amp; Diploma Programs</div>
-          </div>
+        <div class="stat-premium-card">
+          <div class="stat-premium-number" data-target="12" data-suffix="+">0</div>
+          <div class="stat-premium-label">Degree &amp; Diploma Programs</div>
         </div>
 
-        <div class="stat-box">
-          <div class="stat-icon icon-purple">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg>
-          </div>
-          <div>
-            <div class="stat-number" data-target="5000" data-suffix="+">0</div>
-            <div class="stat-label">Total Empowered Students</div>
-          </div>
+        <div class="stat-premium-card">
+          <div class="stat-premium-number" data-target="5000" data-suffix="+">0</div>
+          <div class="stat-premium-label">Total Empowered Students</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. COLLEGE OVERVIEW & VISION, MISSION, FUTURE VISION -->
-  <section class="section-padding overview-section" id="overview">
+  <!-- 5. COLLEGE OVERVIEW - PREMIUM TWO COLUMN LAYOUT -->
+  <section class="section-padding about-premium-section" id="overview">
     <div class="container">
-      <div class="overview-grid">
-        <div>
-          <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0825-copy.jpg"
-            alt="NMC Campus View"
-            style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); width: 100%; height: 460px; object-fit: cover;">
+      <div class="about-premium-grid">
+        <!-- Left: Image with decorative elements -->
+        <div class="about-premium-img-wrap">
+          <div class="about-img-decoration"></div>
+          <div class="about-img-frame">
+            <img src="Images/NMC_Collage.jpg"
+              alt="NMC Campus View" class="about-premium-img">
+          </div>
+          <div class="about-img-badge">
+            <span class="about-badge-number">15+</span>
+            <span class="about-badge-text">Years of Excellence</span>
+          </div>
         </div>
 
-        <div>
-          <div class="section-subtitle">
+        <!-- Right: Content -->
+        <div class="about-premium-content">
+          <div class="about-premium-tag">
+            <span class="about-tag-dot"></span>
             <span>About Nandkunvarba Mahila College</span>
           </div>
 
-          <h2 class="section-title">Welcome to <span>Nandkunvarba Mahila College!</span></h2>
+          <h2 class="about-premium-title">Welcome to <span>Nandkunvarba Mahila College!</span></h2>
 
-          <h3
-            style="font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; color: var(--gray-800); margin-bottom: 1.25rem;">
-            We Are Eager To Give You Best Education.
-          </h3>
+          <h3 class="about-premium-subtitle">We Are Eager To Give You Best Education.</h3>
 
-          <p style="font-size: 1rem; color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.65;">
+          <p class="about-premium-text">
             Nandkunvarba Mahila college was established in June 2009. It is affiliated to <strong>M K Bhavnagar
               University</strong>. Nandkunvarba Mahila College runs various Graduate and Post Graduate courses in the
             area of Commerce, Arts, Management, Social Work, Computer Application and Fashion Designing. The College
@@ -205,7 +165,7 @@
             facilities.
           </p>
 
-          <a href="#faculty" class="btn btn-crimson" style="font-size: 1rem; padding: 0.8rem 1.8rem;">
+          <a href="#faculty" class="btn btn-crimson about-premium-btn">
             <span>Meet Our Teachers!</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M5 13h11.86l-5.43 5.43 1.42 1.42L21.14 12l-8.29-8.29-1.42 1.42L16.86 11H5v2z" />
@@ -291,69 +251,93 @@
   <!-- 6. WHY CHOOSE US? (STATIC) -->
   <section class="section-padding why-choose-section">
     <div class="container">
-      <div class="section-header">
-        <div class="section-subtitle">Why NMC Stands Out</div>
-        <h2 class="section-title" style="white-space: nowrap;">Why Choose <span>Nandkunvarba Mahila College?</span></h2>
-        <p class="section-description">Unmatched safety, academic rigor, financial relief, and professional growth for
-          female students.</p>
-      </div>
-
-      <div class="why-pro-grid">
-        <div class="why-pro-card">
-          <div class="why-pro-icon why-pro-icon-sky">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="1" y="3" width="15" height="13" rx="2" />
-              <path d="M16 8h2a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
-              <circle cx="5.5" cy="18.5" r="2.5" />
-              <circle cx="18.5" cy="18.5" r="2.5" />
-              <path d="M8 18h8" />
-            </svg>
+      <div class="why-choose-layout">
+        <!-- Left: Image Collage -->
+        <div class="why-choose-images">
+          <div class="why-img-collage">
+            <div class="why-img-large">
+              <img src="Images/Why us3.jpg" alt="NMC College Building">
+            </div>
+            <div class="why-img-small-group">
+              <div class="why-img-small">
+                <img src="Images/why us1.jpg" alt="NMC Workshop">
+              </div>
+              <div class="why-img-small">
+                <img src="Images/why us2.jpg" alt="NMC Subject Information">
+              </div>
+            </div>
           </div>
-          <h3 class="why-pro-title">100% Free Bus Service</h3>
-          <p class="why-pro-desc">Complete pick-up &amp; drop bus transport covering Bhavnagar &amp; surrounding areas
-            for free.</p>
         </div>
 
-        <div class="why-pro-card">
-          <div class="why-pro-icon why-pro-icon-gold">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 12 20 22 4 22 4 12" />
-              <rect x="2" y="7" width="20" height="5" />
-              <line x1="12" y1="22" x2="12" y2="7" />
-              <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
-              <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
-            </svg>
-          </div>
-          <h3 class="why-pro-title">Free Designer Blazer Gift</h3>
-          <p class="why-pro-desc">Welcome gift of official college blazer for every newly admitted student.</p>
-        </div>
+        <!-- Right: Content -->
+        <div class="why-choose-content">
+          <div class="section-subtitle">Why NMC Stands Out</div>
+          <h2 class="section-title">Why Choose <span>Nandkunvarba Mahila College?</span></h2>
+          <p class="why-choose-desc">Unmatched safety, academic rigor, financial relief, and professional growth for
+            female students.</p>
 
-        <div class="why-pro-card">
-          <div class="why-pro-icon why-pro-icon-red">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-              <circle cx="9" cy="7" r="4" />
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg>
-          </div>
-          <h3 class="why-pro-title">Expert Faculty Mentors</h3>
-          <p class="why-pro-desc">Highly qualified professors and coordinators giving individual academic attention.</p>
-        </div>
+          <div class="why-choose-features">
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="1" y="3" width="15" height="13" rx="2" />
+                  <path d="M16 8h2a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+                  <circle cx="5.5" cy="18.5" r="2.5" />
+                  <circle cx="18.5" cy="18.5" r="2.5" />
+                  <path d="M8 18h8" />
+                </svg>
+              </div>
+              <span class="why-feature-text">100% Free Bus Service</span>
+            </div>
 
-        <div class="why-pro-card">
-          <div class="why-pro-icon why-pro-icon-sky">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-            </svg>
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 12 20 22 4 22 4 12" />
+                  <rect x="2" y="7" width="20" height="5" />
+                  <line x1="12" y1="22" x2="12" y2="7" />
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+                </svg>
+              </div>
+              <span class="why-feature-text">Free Designer Blazer Gift</span>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <span class="why-feature-text">Expert Faculty Mentors</span>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-feature-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg>
+              </div>
+              <span class="why-feature-text">Placement &amp; Industry MoUs</span>
+            </div>
           </div>
-          <h3 class="why-pro-title">Placement &amp; Industry MoUs</h3>
-          <p class="why-pro-desc">Dedicated placement cell, internship tie-ups, and campus interview training.</p>
+
+          <a href="#facilities" class="why-choose-btn">
+            MORE DETAILS
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="M12 5l7 7-7 7" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -379,7 +363,7 @@
 
         <div class="facilities-grid">
           <div class="facility-card">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0194-copy.jpg"
+            <img src="Images/Computer Lab.jpg"
               alt="Computer Lab" class="facility-img">
             <div class="facility-content">
               <h3 class="facility-title">High-Tech BCA Computer Lab</h3>
@@ -389,7 +373,7 @@
           </div>
 
           <div class="facility-card">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0094-copy.jpg"
+            <img src="Images/FD Studio.jpg"
               alt="Fashion Lab" class="facility-img">
             <div class="facility-content">
               <h3 class="facility-title">Fashion Designing Studio</h3>
@@ -399,7 +383,7 @@
           </div>
 
           <div class="facility-card">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0267-copy.jpg"
+            <img src="Images/AC_Hall.jpg"
               alt="Seminar Hall" class="facility-img">
             <div class="facility-content">
               <h3 class="facility-title">Air-Conditioned Seminar Hall</h3>
@@ -439,18 +423,18 @@
 
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="NMC_Collage.jpg" alt="NMC College">
+            <img src="Images/NMC_Collage.jpg" alt="NMC College">
           </div>
           <div class="gallery-item">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0317-copy.jpg"
+            <img src="Images/C_banner2.png"
               alt="Gallery 2">
           </div>
           <div class="gallery-item">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0267-copy.jpg"
+            <img src="Images/c_banner.png"
               alt="Gallery 3">
           </div>
           <div class="gallery-item">
-            <img src="https://nandkunvarbamahilacollege.com/wp-content/uploads/2018/11/DSC_0194-copy.jpg"
+            <img src="Images/Banner1_800.png"
               alt="Gallery 4">
           </div>
         </div>
@@ -486,7 +470,7 @@
         </div>
 
         <div class="tour-preview-box">
-          <img src="NMC_Collage.jpg" alt="NMC College Collage" class="tour-preview-img">
+          <img src="Images/NMC_Collage.jpg" alt="NMC College Collage" class="tour-preview-img">
         </div>
       </div>
     </div>
@@ -662,7 +646,7 @@
         <div class="awards-gallery" id="awardsGallery">
           <div class="award-item">
             <div class="award-img-wrap">
-              <img src="Awward1.jpg" alt="NMC Award Certificate 1" class="award-img">
+              <img src="Images/Awward1.jpg" alt="NMC Award Certificate 1" class="award-img">
             </div>
             <h4 class="award-name">Academic Excellence Award</h4>
             <p class="award-info">Outstanding performance in academics and student development.</p>
@@ -670,7 +654,7 @@
 
           <div class="award-item">
             <div class="award-img-wrap">
-              <img src="Awward2.jpg" alt="NMC Award Certificate 2" class="award-img">
+              <img src="Images/Awward2.jpg" alt="NMC Award Certificate 2" class="award-img">
             </div>
             <h4 class="award-name">Best Women's College Recognition</h4>
             <p class="award-info">Empowering women through quality education and holistic growth.</p>
@@ -678,7 +662,7 @@
 
           <div class="award-item">
             <div class="award-img-wrap">
-              <img src="Awward3.jpg" alt="NMC Award Certificate 3" class="award-img">
+              <img src="Images/Awward3.jpg" alt="NMC Award Certificate 3" class="award-img">
             </div>
             <h4 class="award-name">Campus Infrastructure Award</h4>
             <p class="award-info">Modern facilities, equipped labs, and student-friendly campus.</p>
@@ -707,7 +691,7 @@
       <div class="faculty-img-grid">
 
         <div class="faculty-img-card">
-          <img src="samkit.jpg" alt="Dr. Samkit Shah" class="faculty-img">
+          <img src="Images/samkit.jpg" alt="Dr. Samkit Shah" class="faculty-img">
           <div class="faculty-img-overlay">
             <h3 class="faculty-img-name">Dr. Samkit Shah</h3>
             <span class="faculty-img-role">I/C Principal</span>
@@ -715,7 +699,7 @@
         </div>
 
         <div class="faculty-img-card">
-          <img src="mehul.jpg" alt="Mehulkumar Bhatt" class="faculty-img">
+          <img src="Images/mehul.jpg" alt="Mehulkumar Bhatt" class="faculty-img">
           <div class="faculty-img-overlay">
             <h3 class="faculty-img-name">Mehulkumar Bhatt</h3>
             <span class="faculty-img-role">I/C Principal</span>
@@ -723,7 +707,7 @@
         </div>
 
         <div class="faculty-img-card">
-          <img src="ankita.jpg" alt="Ankita R. Patel" class="faculty-img">
+          <img src="Images/ankita.jpg" alt="Ankita R. Patel" class="faculty-img">
           <div class="faculty-img-overlay">
             <h3 class="faculty-img-name">Ankita R. Patel</h3>
             <span class="faculty-img-role">Principal / Co-ordinator</span>
@@ -731,7 +715,7 @@
         </div>
 
         <div class="faculty-img-card">
-          <img src="dipak.jpg" alt="Dipak Makwana" class="faculty-img">
+          <img src="Images/dipak.jpg" alt="Dipak Makwana" class="faculty-img">
           <div class="faculty-img-overlay">
             <h3 class="faculty-img-name">Dipak Makwana</h3>
             <span class="faculty-img-role">Academic Co-ordinator</span>
@@ -762,7 +746,7 @@
           <!-- Card 1 -->
           <div class="cert-hcard">
             <div class="cert-hcard-img">
-              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop" alt="Tally ERP Accounting">
+              <img src="Images/c_banner.png" alt="Tally ERP Accounting">
               <span class="cert-hcard-badge">Popular</span>
             </div>
             <div class="cert-hcard-content">
@@ -780,7 +764,7 @@
           <!-- Card 2 -->
           <div class="cert-hcard">
             <div class="cert-hcard-img">
-              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop" alt="Graphic Design">
+              <img src="Images/C_banner2.png" alt="Graphic Design">
             </div>
             <div class="cert-hcard-content">
               <span class="cert-hcard-tag cert-tag-sky">Design &amp; Creative</span>
@@ -797,7 +781,7 @@
           <!-- Card 3 -->
           <div class="cert-hcard">
             <div class="cert-hcard-img">
-              <img src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=400&h=300&fit=crop" alt="Communication Skills">
+              <img src="Images/Banner2_800.png" alt="Communication Skills">
             </div>
             <div class="cert-hcard-content">
               <span class="cert-hcard-tag cert-tag-gold">Professional Growth</span>
@@ -814,7 +798,7 @@
           <!-- Card 4 -->
           <div class="cert-hcard">
             <div class="cert-hcard-img">
-              <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=400&h=300&fit=crop" alt="Environmental Studies">
+              <img src="Images/NMC_Collage.jpg" alt="Environmental Studies">
             </div>
             <div class="cert-hcard-content">
               <span class="cert-hcard-tag cert-tag-emerald">Health &amp; Wellness</span>
@@ -831,7 +815,7 @@
           <!-- Card 5 -->
           <div class="cert-hcard">
             <div class="cert-hcard-img">
-              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop" alt="Computer Skills">
+              <img src="Images/Banner1_800.png" alt="Computer Skills">
             </div>
             <div class="cert-hcard-content">
               <span class="cert-hcard-tag cert-tag-purple">IT &amp; Computing</span>
@@ -916,7 +900,7 @@
               <p class="digi-card-text">"Nandkunvarba Mahila College has set a benchmark for women's higher education in Bhavnagar. Their commitment to free transportation, modern infrastructure, and high academic standard makes them a model institution for women's empowerment."</p>
               <div class="digi-card-author">
                 <div class="digi-author-img">
-                  <img src="samkit.jpg" alt="Vice Chancellor">
+                  <img src="Images/samkit.jpg" alt="Vice Chancellor">
                 </div>
                 <div class="digi-author-info">
                   <h4>Vice Chancellor</h4>
@@ -938,7 +922,7 @@
               <p class="digi-card-text">"The college's dedication to women's education through innovative programs and zero-cost facilities is truly commendable. An institution that truly lives by its mission of empowering young women."</p>
               <div class="digi-card-author">
                 <div class="digi-author-img">
-                  <img src="mehul.jpg" alt="Dr. Rajesh Patel">
+                  <img src="Images/mehul.jpg" alt="Dr. Rajesh Patel">
                 </div>
                 <div class="digi-author-info">
                   <h4>Dr. Rajesh Patel</h4>
@@ -960,7 +944,7 @@
               <p class="digi-card-text">"NMC's approach to holistic women's education — combining academics with personality development and career skills — creates well-rounded graduates ready for the modern workforce."</p>
               <div class="digi-card-author">
                 <div class="digi-author-img">
-                  <img src="dipak.jpg" alt="Shri Mehta">
+                  <img src="Images/ankita.jpg" alt="Shri Mehta">
                 </div>
                 <div class="digi-author-info">
                   <h4>Shri Mehta</h4>
