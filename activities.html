@@ -34,7 +34,21 @@
       <nav class="hero-nav">
         <ul class="hero-nav-menu">
           <li><a href="index.html" class="hero-nav-link">HOME</a></li>
-          <li><a href="about.html" class="hero-nav-link">ABOUT US</a></li>
+          <li class="hero-nav-dropdown">
+              <a href="about.html" class="hero-nav-link">ABOUT US <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+              <ul class="hero-dropdown-menu">
+                <li><a href="about.html#overview">College Overview</a></li>
+                <li><a href="about.html#history">History &amp; Legacy</a></li>
+                <li><a href="about.html#vision">Vision and Mission</a></li>
+                <li><a href="about.html#founders">Founding Fathers</a></li>
+                <li><a href="about.html#chairman">Chairman's Message</a></li>
+                <li><a href="about.html#affiliation">Affiliation &amp; Recognition</a></li>
+                <li><a href="about.html#song">NMC Song</a></li>
+                <li><a href="about.html#brochure">NMC Brochure</a></li>
+                <li><a href="about.html#awards">Awards</a></li>
+                <li><a href="about.html#future">Future Vision</a></li>
+              </ul>
+            </li>
           <li><a href="gallery.html" class="hero-nav-link">GALLERY</a></li>
           <li class="hero-nav-dropdown">
             <a href="courses.html" class="hero-nav-link">COURSES <svg width="10" height="10" viewBox="0 0 24 24"
@@ -63,6 +77,7 @@
           </li>
           <li><a href="index.html#happenings" class="hero-nav-link">HAPPENINGS</a></li>
           <li><a href="index.html#iqac" class="hero-nav-link">IQAC</a></li>
+            <li><a href="index.html#contact" class="hero-nav-link">CONTACT US</a></li>
         </ul>
       </nav>
 
@@ -119,16 +134,16 @@
       <!-- Interactive 4-Category Switcher Filter Tabs -->
       <div class="cal-tabs-bar">
         <button class="cal-tab-btn active" data-cal-tab="milestones">
-          <span>📅 Semester Milestones</span>
+          <span style="display: flex; align-items: center; gap: 0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> Semester Milestones</span>
         </button>
         <button class="cal-tab-btn" data-cal-tab="shifts">
-          <span>⏰ Daily Shift Timetable</span>
+          <span style="display: flex; align-items: center; gap: 0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Daily Shift Timetable</span>
         </button>
         <button class="cal-tab-btn" data-cal-tab="exams">
-          <span>📝 Exams &amp; Tests</span>
+          <span style="display: flex; align-items: center; gap: 0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg> Exams &amp; Tests</span>
         </button>
         <button class="cal-tab-btn" data-cal-tab="holidays">
-          <span>🏖️ Holidays &amp; Breaks</span>
+          <span style="display: flex; align-items: center; gap: 0.4rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> Holidays &amp; Breaks</span>
         </button>
       </div>
 
@@ -150,7 +165,7 @@
                 <h4 class="cmile-title">Academic Session &amp; Orientation</h4>
                 <p class="cmile-desc">Commencement of regular classroom lectures, induction bootcamps for freshers &amp; library registration.</p>
                 <div class="cmile-footer">
-                  <span class="cmile-tag">🎓 FY, SY &amp; TY Classes</span>
+                  <span class="cmile-tag" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg> FY, SY &amp; TY Classes</span>
                 </div>
               </div>
 
@@ -162,7 +177,7 @@
                 <h4 class="cmile-title">Mid-Semester Internal Assessments</h4>
                 <p class="cmile-desc">Subject-wise written internal tests, assignments submission &amp; computer lab practical evaluations.</p>
                 <div class="cmile-footer">
-                  <span class="cmile-tag">📊 Internal 30 Marks</span>
+                  <span class="cmile-tag" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg> Internal 30 Marks</span>
                 </div>
               </div>
 
@@ -174,7 +189,7 @@
                 <h4 class="cmile-title">Diwali &amp; Mid-Term Vacation</h4>
                 <p class="cmile-desc">21-day sanctioned festive break for students and faculty following MKBU academic guidelines.</p>
                 <div class="cmile-footer">
-                  <span class="cmile-tag">🪔 21 Days Vacation</span>
+                  <span class="cmile-tag" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> 21 Days Vacation</span>
                 </div>
               </div>
 
@@ -186,7 +201,7 @@
                 <h4 class="cmile-title">MKBU Final Semester Examinations</h4>
                 <p class="cmile-desc">Theory papers and university practical viva across all undergraduate and postgraduate streams.</p>
                 <div class="cmile-footer">
-                  <span class="cmile-tag">🎯 External 70 Marks</span>
+                  <span class="cmile-tag" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg> External 70 Marks</span>
                 </div>
               </div>
 
@@ -199,7 +214,7 @@
               
               <div class="cal-shift-card spotlight-active">
                 <div class="cshift-header header-ruby">
-                  <div class="cshift-icon">☀️</div>
+                  <div class="cshift-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></div>
                   <div>
                     <span class="cshift-sub">Morning Session</span>
                     <h4 class="cshift-title">UG Degree Programs Shift</h4>
@@ -217,7 +232,7 @@
                   </div>
                   <div class="cshift-row cshift-recess">
                     <span class="cslot-time">09:25 - 09:45</span>
-                    <span class="cslot-name">☕ Morning Tea &amp; Campus Recess</span>
+                    <span class="cslot-name" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg> Morning Tea &amp; Campus Recess</span>
                   </div>
                   <div class="cshift-row">
                     <span class="cslot-time">09:45 - 10:35</span>
@@ -232,7 +247,7 @@
 
               <div class="cal-shift-card spotlight-active">
                 <div class="cshift-header header-gold">
-                  <div class="cshift-icon">💻</div>
+                  <div class="cshift-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line></svg></div>
                   <div>
                     <span class="cshift-sub">Afternoon &amp; Lab Session</span>
                     <h4 class="cshift-title">BCA, IT &amp; Studio Shift</h4>
@@ -250,7 +265,7 @@
                   </div>
                   <div class="cshift-row cshift-recess">
                     <span class="cslot-time">02:25 - 02:45</span>
-                    <span class="cslot-name">🥪 Afternoon Refreshment Recess</span>
+                    <span class="cslot-name" style="display: flex; align-items: center; gap: 0.4rem;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg> Afternoon Refreshment Recess</span>
                   </div>
                   <div class="cshift-row">
                     <span class="cslot-time">02:45 - 03:35</span>
@@ -270,7 +285,7 @@
           <div class="cal-tab-panel" id="cal-panel-exams">
             <div class="cal-exams-list">
               <div class="cal-exam-item spotlight-active">
-                <div class="cexam-icon icon-ruby">📝</div>
+                <div class="cexam-icon icon-ruby"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
                 <div class="cexam-info">
                   <strong>Unit Test 1 (Classroom Assessment)</strong>
                   <span>Syllabus: Units 1 &amp; 2 | Marks: 20 | Schedule: July 22 - July 28</span>
@@ -278,7 +293,7 @@
                 <span class="cexam-status status-gold">Upcoming</span>
               </div>
               <div class="cal-exam-item spotlight-active">
-                <div class="cexam-icon icon-gold">📊</div>
+                <div class="cexam-icon icon-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg></div>
                 <div class="cexam-info">
                   <strong>Mid-Semester Internal Assessment</strong>
                   <span>Syllabus: 50% Course | Marks: 30 | Schedule: August 28 - September 05</span>
@@ -286,7 +301,7 @@
                 <span class="cexam-status status-gold">Scheduled</span>
               </div>
               <div class="cal-exam-item spotlight-active">
-                <div class="cexam-icon icon-crimson">🎯</div>
+                <div class="cexam-icon icon-crimson"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></div>
                 <div class="cexam-info">
                   <strong>MKBU University Semester Examination</strong>
                   <span>Syllabus: Complete Course | Marks: 70 | Schedule: November 25 Onwards</span>
@@ -346,7 +361,7 @@
 
             <!-- Selected Event Snapshot -->
             <div class="cmatrix-event-snapshot">
-              <div class="cevent-snap-icon">🔔</div>
+              <div class="cevent-snap-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></div>
               <div class="cevent-snap-text">
                 <strong>Next Milestone: Aug 28, 2026</strong>
                 <span>Sem 3 &amp; Sem 5 Internal Written Tests Begin</span>
